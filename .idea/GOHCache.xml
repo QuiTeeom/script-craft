@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="Api">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/api/api.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="App">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/app.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Index">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IndexCollection">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IndexCollectionGroup">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IndexCollectionTree">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IndexCollections">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="IndexStatus">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Mw">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/filerunner/filerunner_test.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ScErr">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/consts/errors.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Script">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/script/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ScriptCategory">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/script/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ScriptContent">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/script/entity/entity.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ScriptServiceImpl">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/script/service/serice.go" />
+              <option value="file://$PROJECT_DIR$/app/backend/domain/script/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Writer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/app.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="args">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/filerunner/filerunner_test.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="dbLogger">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/infra/db/db.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="indexService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/index/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="scriptServiceImpl">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/app/backend/domain/script/service/service.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/app/app.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756475678380" />
+              <option name="schema">
+                <list>
+                  <option value="App" />
+                  <option value="Writer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/api/api.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756483392764" />
+              <option name="schema">
+                <list>
+                  <option value="Api" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/api/index.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756534353687" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/api/script.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756542835985" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/application/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756483925868" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/config/config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756357235475" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/consts/consts.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756542554070" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/consts/errors.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756475266182" />
+              <option name="schema">
+                <list>
+                  <option value="ScErr" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/consts.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756428797048" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/consts/consts.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756429068472" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756537353878" />
+              <option name="schema">
+                <list>
+                  <option value="Index" />
+                  <option value="IndexCollection" />
+                  <option value="IndexCollectionGroup" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/index/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756534121327" />
+              <option name="schema">
+                <list>
+                  <option value="indexService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/script/entity/entity.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756534761722" />
+              <option name="schema">
+                <list>
+                  <option value="Script" />
+                  <option value="ScriptCategory" />
+                  <option value="ScriptContent" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/script/service/serice.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756480072427" />
+              <option name="schema">
+                <list>
+                  <option value="ScriptServiceImpl" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/domain/script/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756542668800" />
+              <option name="schema">
+                <list>
+                  <option value="scriptServiceImpl" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/filerunner/filerunner.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756093427014" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/filerunner/filerunner_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755738273742" />
+              <option name="schema">
+                <list>
+                  <option value="args" />
+                  <option value="Mw" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/infra/db/db.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756484086935" />
+              <option name="schema">
+                <list>
+                  <option value="dbLogger" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/backend/infra/logs/log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756357582796" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/cmd/filerunner/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755303738204" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/frontend/src/index/category.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756538081114" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/frontend/src/store/scriptStore.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756541734727" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/app/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756474427806" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="api" value="Api" />
+        <entry key="app" value="App" />
+        <entry key="args" value="args" />
+        <entry key="db_logger" value="dbLogger" />
+        <entry key="index" value="Index" />
+        <entry key="index_collection" value="IndexCollection" />
+        <entry key="index_collection_group" value="IndexCollectionGroup" />
+        <entry key="index_collection_tree" value="IndexCollectionTree" />
+        <entry key="index_collections" value="IndexCollections" />
+        <entry key="index_service" value="indexService" />
+        <entry key="index_status" value="IndexStatus" />
+        <entry key="mw" value="Mw" />
+        <entry key="sc_err" value="ScErr" />
+        <entry key="script" value="Script" />
+        <entry key="script_category" value="ScriptCategory" />
+        <entry key="script_content" value="ScriptContent" />
+        <entry key="script_service_impl" value="scriptServiceImpl" />
+        <entry key="writer" value="Writer" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1756427489400" />
+  </component>
+</project>
