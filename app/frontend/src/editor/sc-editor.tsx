@@ -21,7 +21,7 @@ import JsonWorker from 'monaco-editor/esm/vs/language/json/json.worker.js?worker
 import React, {useEffect, useRef, useState} from "react";
 import styled from "styled-components";
 import {CaretRightFilled, SaveFilled} from "@ant-design/icons";
-import {Button, Flex} from "antd";
+import {Button, Flex, notification} from "antd";
 import {editor} from "monaco-editor";
 import IStandaloneCodeEditor = editor.IStandaloneCodeEditor;
 import {RunScript} from "../../wailsjs/go/main/App";
@@ -78,6 +78,11 @@ export function ScEditor(
     const activeScript = useScriptStore(state=>state.activeScript)
     const activeScriptContext = useScriptStore(state=>state.activeScriptContext)
 
+    const [saving,setSaving] = useState(false)
+    const [savingValue,setSavingValue] = useState<string>("")
+
+    const [api, contextHolder] = notification.useNotification();
+
     useEffect(()=>{
         if (editor.current!=null) {
             return;
@@ -92,6 +97,19 @@ export function ScEditor(
             automaticLayout: true,
         });
 
+        newEditor.addAction({
+            id: 'save',
+            label: '保存',
+            keybindings: [
+                monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS
+            ],
+            contextMenuGroupId: 'navigation',
+            contextMenuOrder: 1.5,
+            run: function (ed) {
+                setSavingValue(ed.getValue())
+            }
+        });
+
         editor.current = newEditor
         props.editor.current = newEditor
     })
@@ -103,6 +121,29 @@ export function ScEditor(
         editor.current.setValue(activeScriptContext)
     }, [activeScriptContext]);
 
+    useEffect(() => {
+        if (editor.current==null) {
+            return;
+        }
+        if (activeScript==null||activeScript.id==null) {
+            return
+        }
+        setSaving(true)
+        console.log("保存内容",activeScript, savingValue)
+        SaveScriptContent(activeScript.id,savingValue)
+            .then(()=>{
+                setSaving(false)
+            })
+    }, [savingValue]);
+
+    const saveValue = async () => {
+        if (editor.current==null||activeScript==null||activeScript.id==null) {
+            return
+        }
+        const value = editor.current.getValue();
+        setSavingValue(value)
+    }
+
     return (
         <ScEditorWrapper>
             <ToolBarWrapper>
@@ -111,45 +152,53 @@ export function ScEditor(
                     style={{height:'100%'}}
                     align={"center"}
                 >
-                    <Flex>
-                        <Button
-                            icon={<SaveFilled/>}
-                            size={"small"}
-                            type={"text"}
-                            onClick={async ()=>{
-                                if (editor.current==null||activeScript==null||activeScript.id==null) {
-                                    return
-                                }
-                                const value = editor.current.getValue();
-                                console.log("保存内容",activeScript, value)
-                                await SaveScriptContent(activeScript.id,value)
-                            }}
-                        >保存</Button>
-                        <Button
-                            icon={<CaretRightFilled />}
-                            size={"small"}
-                            type={"text"}
-                            onClick={()=>{
-                                const value = editor.current?.getValue();
-                                console.log(value)
-                                if (value==null){
-                                    return
-                                }
-                                const eventName = new Date().getMilliseconds()+""
-                                props.runnerWriter(Uint8Array.of(12))
-                                EventsOn(eventName,function (data:number) {
-                                    // const uint8Array = toByteArray(data);
-                                    // console.log(JSON.stringify(new TextDecoder().decode(uint8Array)));
-                                    props.runnerWriter(Uint8Array.of(data))
-                                })
-                                RunScript(eventName, value)
-                                    .then(function (res) {
-                                        console.log("完成")
-                                        EventsOff(eventName)
-                                        // props.runnerWriter(new TextEncoder().encode('ok'))
+                    <Flex
+                        style={{width:'100%'}}
+                        justify={'space-between'}
+                        align={'center'}
+                    >
+                        <div style={{paddingLeft:'5px'}}>
+                            {activeScript&&activeScript.name?activeScript.name:''}
+                        </div>
+
+                        <div>
+                            <Button
+                                disabled={saving}
+                                loading={saving}
+                                icon={<SaveFilled/>}
+                                size={"small"}
+                                type={"text"}
+                                onClick={async ()=>{
+                                   await saveValue()
+                                }}
+                            >保存</Button>
+                            <Button
+                                icon={<CaretRightFilled />}
+                                size={"small"}
+                                type={"text"}
+                                onClick={()=>{
+                                    const value = editor.current?.getValue();
+                                    console.log(value)
+                                    if (value==null){
+                                        return
+                                    }
+                                    const eventName = new Date().getMilliseconds()+""
+                                    props.runnerWriter(Uint8Array.of(12))
+                                    EventsOn(eventName,function (data:number) {
+                                        // const uint8Array = toByteArray(data);
+                                        // console.log(JSON.stringify(new TextDecoder().decode(uint8Array)));
+                                        props.runnerWriter(Uint8Array.of(data))
                                     })
-                            }}
-                        >运行</Button>
+                                    RunScript(eventName, value)
+                                        .then(function (res) {
+                                            console.log("完成")
+                                            EventsOff(eventName)
+                                            // props.runnerWriter(new TextEncoder().encode('ok'))
+                                        })
+                                }}
+                            >运行</Button>
+                        </div>
+
                     </Flex>
                 </Flex>
             </ToolBarWrapper>

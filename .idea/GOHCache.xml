@@ -38,27 +38,6 @@
             </set>
           </value>
         </entry>
-        <entry key="IndexCollectionTree">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="IndexCollections">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="IndexStatus">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/app/backend/domain/index/entity/entity.go" />
-            </set>
-          </value>
-        </entry>
         <entry key="Mw">
           <value>
             <set>
@@ -91,14 +70,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/app/backend/domain/script/entity/entity.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="ScriptServiceImpl">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/app/backend/domain/script/service/serice.go" />
-              <option value="file://$PROJECT_DIR$/app/backend/domain/script/service/service.go" />
             </set>
           </value>
         </entry>
@@ -204,26 +175,12 @@
         <entry key="file://$PROJECT_DIR$/app/backend/consts/errors.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1756475266182" />
+              <option name="lastModified" value="1756545618966" />
               <option name="schema">
                 <list>
                   <option value="ScErr" />
                 </list>
               </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/app/backend/domain/consts.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1756428797048" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/app/backend/domain/consts/consts.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1756429068472" />
             </ScannedPath>
           </value>
         </entry>
@@ -267,18 +224,6 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/app/backend/domain/script/service/serice.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1756480072427" />
-              <option name="schema">
-                <list>
-                  <option value="ScriptServiceImpl" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/app/backend/domain/script/service/service.go">
           <value>
             <ScannedPath>
@@ -314,7 +259,7 @@
         <entry key="file://$PROJECT_DIR$/app/backend/infra/db/db.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1756484086935" />
+              <option name="lastModified" value="1756545619121" />
               <option name="schema">
                 <list>
                   <option value="dbLogger" />
@@ -337,20 +282,6 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/app/frontend/src/index/category.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1756538081114" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/app/frontend/src/store/scriptStore.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1756541734727" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/app/main.go">
           <value>
             <ScannedPath>
@@ -369,10 +300,7 @@
         <entry key="index" value="Index" />
         <entry key="index_collection" value="IndexCollection" />
         <entry key="index_collection_group" value="IndexCollectionGroup" />
-        <entry key="index_collection_tree" value="IndexCollectionTree" />
-        <entry key="index_collections" value="IndexCollections" />
         <entry key="index_service" value="indexService" />
-        <entry key="index_status" value="IndexStatus" />
         <entry key="mw" value="Mw" />
         <entry key="sc_err" value="ScErr" />
         <entry key="script" value="Script" />
@@ -382,6 +310,6 @@
         <entry key="writer" value="Writer" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1756427489400" />
+    <option name="lastTimeChecked" value="1756546445372" />
   </component>
 </project>

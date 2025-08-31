@@ -392,6 +392,8 @@ export function IndexCollection(props:{
                     treeData={index}
                     showLine={true}
                     blockNode={true}
+                    defaultExpandAll={true}
+                    autoExpandParent={true}
                     onClick={(_,index)=>{
                         const indexableObject = props.indexableObjects[index.type];
                         if (indexableObject==null){
